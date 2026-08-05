@@ -516,6 +516,37 @@ h3 { font-size: clamp(1.2rem, 1.9vw, 1.45rem); letter-spacing: -0.015em; }
 .map-frame { border-radius: 18px; overflow: hidden; border: 1px solid var(--line); height: 340px; }
 .map-frame iframe { width: 100%; height: 100%; border: 0; filter: grayscale(0.3) invert(0.92) contrast(0.9); }
 
+/* Contact form */
+.contact-form { max-width: 760px; }
+.form-grid { display: grid; gap: 1.25rem; grid-template-columns: 1fr; }
+@media (min-width: 720px) { .form-grid { grid-template-columns: 1fr 1fr; } }
+.form-field-full { grid-column: 1 / -1; }
+.form-field { display: flex; flex-direction: column; gap: 0.5rem; }
+.form-field label { font-family: var(--font-mono); font-size: 0.75rem; color: var(--mute); text-transform: uppercase; letter-spacing: 0.08em; }
+.form-field input, .form-field textarea {
+  font-family: var(--font-body); font-size: 1rem; color: var(--ink);
+  background: var(--bg-card); border: 1px solid var(--line); border-radius: 10px;
+  padding: 0.85rem 1rem; resize: vertical;
+  transition: border-color .3s var(--ease-out), background .3s var(--ease-out);
+}
+.form-field input:focus, .form-field textarea:focus { outline: none; border-color: var(--accent); background: var(--bg-card-2); }
+.form-status { margin-top: 1rem; font-size: 0.92rem; min-height: 1.3em; }
+.form-status.is-pending { color: var(--mute); }
+.form-status.is-success { color: var(--accent); }
+.form-status.is-error { color: #e0714a; }
+
+/* Floating WhatsApp button */
+.whatsapp-float {
+  position: fixed; right: 1.5rem; bottom: 1.5rem; z-index: 60;
+  width: 56px; height: 56px; border-radius: 50%;
+  background: #25D366; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  transition: transform .3s var(--ease-out), box-shadow .3s var(--ease-out);
+}
+.whatsapp-float:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 12px 30px rgba(0,0,0,0.4); }
+.whatsapp-float svg { width: 28px; height: 28px; }
+
 /* =============================================================
    7. Effects
    ============================================================= */

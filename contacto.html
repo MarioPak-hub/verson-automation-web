@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="styles.css?v=20260720f" />
+<link rel="stylesheet" href="styles.css?v=20260805b" />
 
 <script type="application/ld+json">
 {
@@ -36,7 +36,7 @@
     "addressCountry": "MX"
   },
   "telephone": "+52-662-436-0467",
-  "email": "contacto@verson.com.mx",
+  "email": "marcos.pita@verson.com.mx",
   "url": "https://www.verson.com.mx/"
 }
 </script>
@@ -93,7 +93,7 @@
         <div>
           <div class="contact-item">
             <span class="label">Correo</span>
-            <span class="value"><a href="mailto:contacto@verson.com.mx">contacto@verson.com.mx</a></span>
+            <span class="value">Ing. Marcos Pita Mora — <a href="mailto:marcos.pita@verson.com.mx">marcos.pita@verson.com.mx</a></span>
           </div>
           <div class="contact-item">
             <span class="label">Teléfono</span>
@@ -101,17 +101,12 @@
           </div>
           <div class="contact-item">
             <span class="label">WhatsApp</span>
-            <span class="value"><a href="https://wa.me/526341081686" target="_blank" rel="noopener">+52 634 108 16 86</a></span>
+            <span class="value"><a href="https://wa.me/526341081686?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20un%20proyecto%20con%20VERSON%20Automation." target="_blank" rel="noopener">+52 634 108 16 86</a></span>
           </div>
           <div class="contact-item">
             <span class="label">Dirección</span>
             <span class="value">Ave. Lázaro Cárdenas #255, Hermosillo, Sonora, C.P. 83280</span>
           </div>
-          <div class="contact-item">
-            <span class="label">Gerente Comercial</span>
-            <span class="value">Ing. Marcos Pita Mora — <a href="mailto:marcos.pita@verson.com.mx">marcos.pita@verson.com.mx</a></span>
-          </div>
-          <a href="mailto:contacto@verson.com.mx" class="btn btn-primary" style="margin-top:2rem;">Escribir un correo <span class="btn-arrow">→</span></a>
         </div>
         <div class="map-frame">
           <iframe
@@ -122,6 +117,46 @@
           </iframe>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Cotización</p>
+        <h2 data-split="words">Cuéntanos el proyecto y te respondemos por correo.</h2>
+      </div>
+      <form class="contact-form" data-reveal data-contact-form action="https://formsubmit.co/marcos.pita@verson.com.mx" method="POST">
+        <input type="hidden" name="_subject" value="Nueva solicitud de cotización — sitio web VERSON" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://www.verson.com.mx/contacto.html?enviado=1" />
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="cf-nombre">Nombre</label>
+            <input id="cf-nombre" type="text" name="Nombre" required />
+          </div>
+          <div class="form-field">
+            <label for="cf-empresa">Empresa</label>
+            <input id="cf-empresa" type="text" name="Empresa" />
+          </div>
+          <div class="form-field">
+            <label for="cf-correo">Correo</label>
+            <input id="cf-correo" type="email" name="Correo" required />
+          </div>
+          <div class="form-field">
+            <label for="cf-telefono">Teléfono</label>
+            <input id="cf-telefono" type="tel" name="Teléfono" />
+          </div>
+          <div class="form-field form-field-full">
+            <label for="cf-mensaje">¿Qué necesitas?</label>
+            <textarea id="cf-mensaje" name="Mensaje" rows="5" required></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin-top:1.5rem;">Enviar solicitud <span class="btn-arrow">→</span></button>
+        <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+      </form>
     </div>
   </section>
 
@@ -150,7 +185,7 @@
       </div>
       <div>
         <h4>Contacto</h4>
-        <a href="mailto:contacto@verson.com.mx">contacto@verson.com.mx</a>
+        <a href="mailto:marcos.pita@verson.com.mx">marcos.pita@verson.com.mx</a>
         <a href="tel:+526624360467">662 436 0467</a>
         <a href="https://wa.me/526341081686" target="_blank" rel="noopener">WhatsApp</a>
       </div>
@@ -162,9 +197,12 @@
   </div>
 </footer>
 
+<a class="whatsapp-float" href="https://wa.me/526341081686?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20un%20proyecto%20con%20VERSON%20Automation." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp para cotizar">
+  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.362.687 4.564 1.872 6.418L4 29l7.79-1.84A11.94 11.94 0 0 0 16.001 27C22.63 27 28 21.627 28 15S22.63 3 16.001 3zm0 21.75c-1.98 0-3.85-.55-5.44-1.5l-.39-.23-4.62 1.09 1.14-4.5-.25-.4A9.7 9.7 0 0 1 5.25 15c0-5.93 4.82-10.75 10.75-10.75S26.75 9.07 26.75 15 21.93 24.75 16 24.75zm5.9-8.14c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.51-.16-.73.16-.22.32-.84 1.05-1.03 1.27-.19.22-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.9-1.78-2.22-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.11-.22.05-.4-.03-.57-.08-.16-.73-1.76-1-2.41-.26-.63-.53-.54-.73-.55h-.62c-.22 0-.57.08-.86.4-.3.32-1.13 1.1-1.13 2.7 0 1.6 1.16 3.14 1.32 3.36.16.22 2.29 3.5 5.55 4.91.78.34 1.38.54 1.86.69.78.25 1.49.21 2.05.13.63-.09 1.9-.78 2.17-1.53.27-.75.27-1.4.19-1.53-.08-.13-.29-.21-.61-.37z"/></svg>
+</a>
 <script defer src="lib/gsap.min.js"></script>
 <script defer src="lib/ScrollTrigger.min.js"></script>
 <script defer src="lib/manifest.js?v=20260721"></script>
-<script defer src="main.js?v=20260721"></script>
+<script defer src="main.js?v=20260805c"></script>
 </body>
 </html>

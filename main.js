@@ -432,6 +432,18 @@
     }).join("");
   }
 
+  /* ---------------- Contact form (FormSubmit.co, sin backend propio) ---------------- */
+  function initContactForm() {
+    var form = $("[data-contact-form]");
+    if (!form) return;
+    var statusEl = $("[data-form-status]", form);
+    if (location.search.indexOf("enviado=1") !== -1 && statusEl) {
+      statusEl.textContent = "¡Listo! Recibimos tu solicitud y te respondemos por correo pronto.";
+      statusEl.className = "form-status is-success";
+      statusEl.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "center" });
+    }
+  }
+
   function boot() {
     safe(mountStats, "mountStats");
     safe(mountServices, "mountServices");
@@ -456,6 +468,7 @@
     safe(initMarquee, "initMarquee");
     safe(initTilt, "initTilt");
     safe(initMagnetic, "initMagnetic");
+    safe(initContactForm, "initContactForm");
 
     document.documentElement.classList.add("is-ready");
   }
