@@ -80,13 +80,17 @@
   AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json image/svg+xml font/woff font/woff2
 </IfModule>
 
-# ----- HTTPS + pretty URLs (no .html in the address bar) -----
+# ----- Canonical host: https://www.verson.com.mx (single redirect hop) -----
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # Force HTTPS
+  # http(s)://verson.com.mx/... -> https://www.verson.com.mx/...
+  RewriteCond %{HTTP_HOST} ^verson\.com\.mx$ [NC]
+  RewriteRule ^(.*)$ https://www.verson.com.mx/$1 [R=301,L]
+
+  # http://www.verson.com.mx/... -> https://www.verson.com.mx/...
   RewriteCond %{HTTPS} !=on
-  RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+  RewriteRule ^(.*)$ https://www.verson.com.mx/$1 [R=301,L]
 
   # /index.html -> /
   RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
@@ -101,3 +105,6 @@
   RewriteCond %{REQUEST_FILENAME}.html -f
   RewriteRule ^(.+?)/?$ $1.html [L]
 </IfModule>
+
+# ----- Custom 404 page -----
+ErrorDocument 404 /404.html

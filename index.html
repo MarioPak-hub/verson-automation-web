@@ -28,12 +28,19 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": [
+    "Organization",
+    "ProfessionalService"
+  ],
+  "@id": "https://www.verson.com.mx/#organization",
   "name": "VERSON AUTOMATION SA DE CV",
+  "legalName": "VERSON AUTOMATION SA DE CV",
   "alternateName": "VERSON Automation",
   "url": "https://www.verson.com.mx/",
   "logo": "https://www.verson.com.mx/assets/img/logo-verson.webp",
+  "image": "https://www.verson.com.mx/assets/img/equipo-verson.webp",
   "foundingDate": "2018",
+  "description": "Integración de proyectos llave en mano de automatización, instrumentación, control eléctrico y sistemas de gas natural para la industria en Hermosillo, Sonora y México.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Ave. Lázaro Cárdenas #255",
@@ -42,10 +49,44 @@
     "postalCode": "83280",
     "addressCountry": "MX"
   },
-  "email": "marcos.pita@verson.com.mx",
   "telephone": "+52-662-436-0467",
-  "sameAs": [],
-  "description": "Integración de proyectos de automatización, instrumentación, control eléctrico y sistemas de gas natural para la industria."
+  "email": "marcos.pita@verson.com.mx",
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "Mexico"
+    },
+    {
+      "@type": "Country",
+      "name": "United States"
+    }
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "telephone": "+52-662-436-0467",
+      "email": "marcos.pita@verson.com.mx",
+      "areaServed": "MX",
+      "availableLanguage": [
+        "es",
+        "en"
+      ]
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://www.verson.com.mx/#website",
+  "url": "https://www.verson.com.mx/",
+  "name": "VERSON Automation",
+  "inLanguage": "es-MX",
+  "publisher": {
+    "@id": "https://www.verson.com.mx/#organization"
+  }
 }
 </script>
 </head>
@@ -56,7 +97,7 @@
 <header class="nav">
   <div class="container">
     <a href="/" class="nav-brand">
-      <img src="assets/img/logo-verson.webp" alt="VERSON Automation" />
+      <img src="assets/img/logo-verson.webp" alt="VERSON Automation" width="128" height="98" />
     </a>
     <nav class="nav-links" aria-label="Principal">
       <a href="/" class="is-active">Inicio</a>
@@ -122,7 +163,7 @@
 
   <section class="section section-tight">
     <div class="container">
-      <div class="stats-strip" data-stats></div>
+      <div class="stats-strip" data-stats><div class="stat-card"><div class="stat-value count-up" data-count-to="2018" data-suffix="">0</div><div class="stat-label">Año de fundación</div></div><div class="stat-card"><div class="stat-value count-up" data-count-to="5" data-suffix="+">0</div><div class="stat-label">Industrias atendidas</div></div><div class="stat-card"><div class="stat-value count-up" data-count-to="30" data-suffix="+">0</div><div class="stat-label">Marcas representadas</div></div><div class="stat-card"><div class="stat-value count-up" data-count-to="11" data-suffix="+">0</div><div class="stat-label">Clientes corporativos</div></div></div>
     </div>
   </section>
 
@@ -139,7 +180,7 @@
           <p class="lede" style="margin-top:1.25rem;">VERSON Automation inicia actividad comercial en 2018 en Hermosillo, Sonora, creada a partir de la demanda de proyectos llave en mano que cumplieran con los estándares del mercado nacional e internacional.</p>
           <a href="nosotros" class="btn btn-ghost" style="margin-top:2rem;">Conocer al equipo <span class="btn-arrow">→</span></a>
         </div>
-        <img src="assets/img/equipo-verson.webp" alt="Equipo de ingenieros de VERSON Automation" loading="lazy" decoding="async" data-reveal class="reveal" />
+        <img src="assets/img/equipo-verson.webp" alt="Equipo de ingenieros de VERSON Automation" loading="lazy" decoding="async" data-reveal class="reveal" width="1155" height="710" />
       </div>
     </div>
   </section>
@@ -180,7 +221,7 @@
         <h2 data-split="words">Trabajo de campo, no renders.</h2>
         <p>Instalación, puesta en marcha y mantenimiento en planta — así es el trabajo diario de VERSON.</p>
       </div>
-      <div class="grid-3" data-projects data-limit="3"></div>
+      <div class="grid-3" data-projects data-limit="3"><article class="card project-card" data-reveal><img src="assets/img/proyecto-robotica-linea.webp" alt="Línea de manufactura automotriz con brazos robóticos industriales integrados" loading="lazy" decoding="async" width="640" height="480" /><div class="project-card-body"><span class="project-card-cat">Automatización · Robótica</span><h3>Integración de celdas robóticas</h3><p>Integración de brazos robóticos en línea de manufactura automotriz, con estaciones de soldadura y ensamble sincronizadas.</p></div></article><article class="card project-card" data-reveal><img src="assets/img/proyecto-cableado-redes.webp" alt="Técnico de VERSON Automation cableando red industrial en gabinete de control" loading="lazy" decoding="async" width="640" height="480" /><div class="project-card-body"><span class="project-card-cat">Ingeniería eléctrica</span><h3>Cableado de redes industriales</h3><p>Tendido y ponchado de cableado de red para gabinetes de control, con identificación conforme a estándar del cliente.</p></div></article><article class="card project-card" data-reveal><img src="assets/img/proyecto-supervision-automatizacion.webp" alt="Operador supervisando línea automatizada con celdas robóticas y gabinetes de control" loading="lazy" decoding="async" width="640" height="480" /><div class="project-card-body"><span class="project-card-cat">Automatización y control</span><h3>Supervisión de líneas automatizadas</h3><p>Monitoreo y ajuste de celdas robotizadas en operación, con gabinetes de control distribuidos a lo largo de la línea.</p></div></article></div>
       <a href="proyectos" class="btn btn-ghost" style="margin-top:2.5rem;">Ver todos los proyectos <span class="btn-arrow">→</span></a>
     </div>
   </section>
@@ -191,7 +232,7 @@
         <p class="kicker">Industrias que atendemos</p>
         <h2 data-split="words">Confianza de operaciones industriales de gran escala.</h2>
       </div>
-      <div data-clients></div>
+      <div data-clients><div class="chip-row"><span class="chip">Faurecia</span><span class="chip">Grupo México</span><span class="chip">COMSA</span><span class="chip">LafargeHolcim</span><span class="chip">Prominox</span><span class="chip">Coba Industrial</span><span class="chip">Mulliert Engineering Solutions</span><span class="chip">Latécoère</span><span class="chip">Naturgy</span><span class="chip">CFE</span><span class="chip">ISD Integrated Systems Design</span></div></div>
     </div>
   </section>
 
@@ -213,7 +254,7 @@
     <div class="footer-grid">
       <div>
         <div class="footer-brand">
-          <img src="assets/img/logo-verson.webp" alt="VERSON Automation" />
+          <img src="assets/img/logo-verson.webp" alt="VERSON Automation" width="128" height="98" />
         </div>
         <p style="max-width:32ch;font-size:0.92rem;">Automatización, instrumentación y control de procesos industriales desde Hermosillo, Sonora.</p>
       </div>
@@ -251,7 +292,7 @@
 <script defer src="lib/three.min.js"></script>
 <script defer src="lib/GLTFLoader.js"></script>
 <script defer src="lib/three-scene.js?v=20260720e"></script>
-<script defer src="lib/manifest.js?v=20260721"></script>
+<script defer src="lib/manifest.js?v=20260805"></script>
 <script defer src="main.js?v=20260805c"></script>
 </body>
 </html>

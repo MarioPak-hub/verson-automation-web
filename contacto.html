@@ -10,6 +10,7 @@
 <meta property="og:title" content="Contacto | VERSON Automation" />
 <meta property="og:description" content="Cotiza tu proyecto de automatización, instrumentación o control industrial." />
 <meta property="og:url" content="https://www.verson.com.mx/contacto" />
+<meta property="og:image" content="https://www.verson.com.mx/assets/img/equipo-verson.webp" />
 <meta property="og:locale" content="es_MX" />
 
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
@@ -24,9 +25,19 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": [
+    "Organization",
+    "ProfessionalService"
+  ],
+  "@id": "https://www.verson.com.mx/#organization",
   "name": "VERSON AUTOMATION SA DE CV",
-  "image": "https://www.verson.com.mx/assets/img/logo-verson.webp",
+  "legalName": "VERSON AUTOMATION SA DE CV",
+  "alternateName": "VERSON Automation",
+  "url": "https://www.verson.com.mx/",
+  "logo": "https://www.verson.com.mx/assets/img/logo-verson.webp",
+  "image": "https://www.verson.com.mx/assets/img/equipo-verson.webp",
+  "foundingDate": "2018",
+  "description": "Integración de proyectos llave en mano de automatización, instrumentación, control eléctrico y sistemas de gas natural para la industria en Hermosillo, Sonora y México.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Ave. Lázaro Cárdenas #255",
@@ -37,7 +48,49 @@
   },
   "telephone": "+52-662-436-0467",
   "email": "marcos.pita@verson.com.mx",
-  "url": "https://www.verson.com.mx/"
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "Mexico"
+    },
+    {
+      "@type": "Country",
+      "name": "United States"
+    }
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "telephone": "+52-662-436-0467",
+      "email": "marcos.pita@verson.com.mx",
+      "areaServed": "MX",
+      "availableLanguage": [
+        "es",
+        "en"
+      ]
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.verson.com.mx/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Contacto",
+      "item": "https://www.verson.com.mx/contacto"
+    }
+  ]
 }
 </script>
 </head>
@@ -48,7 +101,7 @@
 <header class="nav">
   <div class="container">
     <a href="/" class="nav-brand">
-      <img src="assets/img/logo-verson.webp" alt="VERSON Automation" />
+      <img src="assets/img/logo-verson.webp" alt="VERSON Automation" width="128" height="98" />
     </a>
     <nav class="nav-links" aria-label="Principal">
       <a href="/">Inicio</a>
@@ -167,7 +220,7 @@
     <div class="footer-grid">
       <div>
         <div class="footer-brand">
-          <img src="assets/img/logo-verson.webp" alt="VERSON Automation" />
+          <img src="assets/img/logo-verson.webp" alt="VERSON Automation" width="128" height="98" />
         </div>
         <p style="max-width:32ch;font-size:0.92rem;">Automatización, instrumentación y control de procesos industriales desde Hermosillo, Sonora.</p>
       </div>
@@ -202,7 +255,7 @@
 </a>
 <script defer src="lib/gsap.min.js"></script>
 <script defer src="lib/ScrollTrigger.min.js"></script>
-<script defer src="lib/manifest.js?v=20260721"></script>
+<script defer src="lib/manifest.js?v=20260805"></script>
 <script defer src="main.js?v=20260805c"></script>
 </body>
 </html>
