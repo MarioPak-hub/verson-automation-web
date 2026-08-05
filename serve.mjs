@@ -28,6 +28,15 @@ const TYPES = {
 createServer(async (req, res) => {
   try {
     let urlPath = decodeURIComponent((req.url || '/').split('?')[0]);
+
+    // Drop ".html" from the address bar: /foo.html -> 301 /foo, /index.html -> 301 /
+    if (urlPath.endsWith('.html')) {
+      const clean = urlPath === '/index.html' ? '/' : urlPath.slice(0, -('.html'.length));
+      const qs = (req.url.split('?')[1] || '');
+      res.writeHead(301, { Location: clean + (qs ? '?' + qs : '') });
+      return res.end();
+    }
+
     if (urlPath === '/' || urlPath.endsWith('/')) urlPath += 'index.html';
     let filePath = normalize(join(ROOT, urlPath));
     if (!filePath.startsWith(ROOT)) { res.writeHead(403); return res.end('Forbidden'); }

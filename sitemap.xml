@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.verson.com.mx/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://www.verson.com.mx/nosotros.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.verson.com.mx/servicios.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.verson.com.mx/catalogo.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.verson.com.mx/industrias.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.verson.com.mx/proyectos.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.verson.com.mx/contacto.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.verson.com.mx/nosotros</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.verson.com.mx/servicios</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.verson.com.mx/catalogo</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.verson.com.mx/industrias</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.verson.com.mx/proyectos</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.verson.com.mx/contacto</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
 </urlset>
